@@ -26,7 +26,7 @@ And the app will show:
 1. **Clone this repo**  
    Or download the `.py` files.
 
-2. **Install dependencies** (preferably in a virtual environment):
+2. **Install dependencies**:
 
    ```bash
    pip install -r requirements.txt
