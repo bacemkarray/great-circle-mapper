@@ -4,7 +4,9 @@ import tkinter as tk
 from PIL import ImageTk, Image
 from itertools import pairwise
 import requests
+import os
 
+API_KEY = os.getenv("MAPS_STATIC_API_KEY")
 
 #Load data from airport data library
 airports = airportsdata.load()  # key is the ICAO identifier (the default)
@@ -31,7 +33,7 @@ def displayMap():
 
 
 def mapRequest(coordinatesList):
-    api = "YOUR_MAPS_STATIC_API_KEY"
+    api = API_KEY
     url = "https://maps.googleapis.com/maps/api/staticmap?"
     markers = ""
     paths = ""
