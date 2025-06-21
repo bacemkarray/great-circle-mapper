@@ -44,7 +44,7 @@ And the app will show:
 
 4. **Run the app**:
    ```bash
-   python greatCircleMapper.py
+   python great_circle_mapper.py
    ```
 
 ---
