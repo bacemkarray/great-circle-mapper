@@ -1,4 +1,4 @@
-# ✈️ Great Circle Mapper (ICAO Edition)
+# ✈️ Great Circle Mapper
 
 This is a lightweight GUI tool for visualizing great circle flight paths between any number of global airports using their **ICAO codes**.
 
@@ -34,10 +34,13 @@ And the app will show:
 
 3. **Set up a Google Maps API key**:
    - Follow this guide: https://developers.google.com/maps/documentation/maps-static/get-api-key
-   - Paste your API key into the `mapRequest` function in `greatCircleMapper.py`:
-     ```python
-     api = "YOUR_API_KEY_HERE"
-     ```
+   - Create a .env file in the project root (if not already present).
+   - Add the following line to .env:
+
+      ```env
+      MAPS_STATIC_API_KEY=YOUR_API_KEY_HERE
+      ```
+   - The application will automatically load this key from the .env file using os.getenv
 
 4. **Run the app**:
    ```bash
