@@ -60,7 +60,7 @@ And the app will show:
 ### 🧠 Notes
 - Only ICAO codes (e.g., `KLAX`, not `LAX`) are supported.
 - The final leg is drawn between the **last two airports** entered.
-- You can enter as many airports as you like, separated by `-`.
+- You can chain however many airports as you like, separated by `-`.
 
 ---
 
