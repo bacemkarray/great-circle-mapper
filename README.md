@@ -1,9 +1,9 @@
 # ✈️ Great Circle Mapper
 
-This is a lightweight GUI tool for visualizing great circle flight paths between any number of global airports using their **ICAO codes**.
+This is a lightweight GUI tool for visualizing great circle flight paths between any number of global airports using their **ICAO codes**. My first full Python project from early 2024. Motivated by my passion for aviation. 
 
 ### 🔍 What it does
-- Lets you input a series of ICAO airport codes (e.g., `CYYZ-KJFK-EGLL`).
+- Lets you input a series of ICAO airport codes (e.g., `CYYZ-OMDB-RJAA`).
 - Fetches each airport's coordinates using the public [`airportsdata`](https://pypi.org/project/airportsdata/) library.
 - Displays a **satellite map** with airport markers and great circle routes between consecutive airports using the **Google Maps Static API**.
 - Built with **Tkinter** for the UI and **Pillow** for image rendering.
@@ -13,18 +13,17 @@ This is a lightweight GUI tool for visualizing great circle flight paths between
 ### 🧪 Example
 Enter:
 ```
-CYYZ-KJFK-EGLL
+CYYZ-RKSI-EGLL
 ```
 And the app will show:
-- A red great circle path from CYYZ → KJFK → EGLL.
-- Marker pins for each airport.
+![Example output](worldMap.gif)
 
 ---
 
 ### 🚀 How to run
 
 1. **Clone this repo**  
-   Or download the `.py` files.
+   Or download the `.py` file.
 
 2. **Install dependencies**:
 
@@ -61,8 +60,3 @@ And the app will show:
 - Only ICAO codes (e.g., `KLAX`, not `LAX`) are supported.
 - The final leg is drawn between the **last two airports** entered.
 - You can chain however many airports as you like, separated by `-`.
-
----
-
-### ⚖️ License
-This project is educational and non-commercial. All map imagery is served via Google Maps under their [terms of service](https://mapsplatform.google.com/terms/).
